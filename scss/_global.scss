@@ -1,0 +1,53 @@
+.container{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title{
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (48 - 22) + 22px);
+  line-height: calc( (100vw - 320px)/(1920 - 320) * (61 - 31) + 31px);
+  text-align: center;
+  color: $accent-title;
+  text-transform: uppercase;
+  margin: 0 15px 13px;
+  @extend %lora-500;
+}
+.title__acccent{
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (48 - 22) + 22px);
+  line-height: calc( (100vw - 320px)/(1920 - 320) * (61 - 31) + 31px);
+  text-align: center;
+  color: $subtitle;
+  text-transform: uppercase;
+  margin-left: 15px;
+  margin-right: 15px;
+  @extend %lora-500;
+}
+.text{
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (18 - 14) + 14px);
+  line-height: calc( (100vw - 320px)/(1920 - 320) * (22 - 16) + 16px);
+  color: $accent-subtitle;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  @extend %manrope-300;
+  max-width: 555px;
+}
+.link{
+  @extend %montserrat-500;
+  color: #fff;
+  background-color: #7167AC;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  border-radius: 6px;
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.steps__title, .about-me__title, .contact__form-title{
+  font-size: calc( (100vw - 320px)/(1920 - 320) * (32 - 18) + 18px); 
+  line-height: calc( (100vw - 320px)/(1920 - 320) * (41 - 26) + 26px); 
+  color: $accent-bg;
+  text-transform: uppercase;
+  @extend %lora-500;
+}
