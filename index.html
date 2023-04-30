@@ -29,31 +29,31 @@
               </div>
   
               <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Главная</a>
+                <li class="menu__list-item menu__list-item--active">
+                  <a class="menu__list-link menu__list-link--active" href="#body">Главная</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Обо мне</a>
+                  <a class="menu__list-link" href="#about-me">Обо мне</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Услуги</a>
+                  <a class="menu__list-link" href="#services">Услуги</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Отзывы клиентов</a>
+                  <a class="menu__list-link" href="#feedback">Отзывы клиентов</a>
                 </li>
                 <li class="menu__list-item">
-                  <a class="menu__list-link" href="#">Контакты</a>
+                  <a class="menu__list-link" href="#request">Контакты</a>
                 </li>
               </ul>
   
               <div class="menu__mobile-footer">
                 <div class="menu__mobile-socials">
-                  <a href="#"><img src="images/youtube_mobile.svg" alt="youtube"></a>
-                  <a href="#"><img src="images/whatsapp_mobile.svg" alt="whatsapp"></a>
-                  <a href="#"><img src="images/facebook_mobile.svg" alt="facebook"></a>
-                  <a href="#"><img src="images/instagram_mobile.svg" alt="instagram"></a>
+                  <a href="https://www.youtube.com/@ARTIOM_PAPIAN" target="_blank"><img src="images/youtube_mobile.svg" alt="youtube"></a>
+                  <a href="#" target="_blank"><img src="images/whatsapp_mobile.svg" alt="whatsapp"></a>
+                  <a href="https://www.facebook.com/papean.art" target="_blank"><img src="images/facebook_mobile.svg" alt="facebook"></a>
+                  <a href="https://www.instagram.com/artiom_papean" target="_blank"><img src="images/instagram_mobile.svg" alt="instagram"></a>
                 </div>
-                <a class="menu__mobile-link" href="#request">Консультация</a>
+                <button class="menu__mobile-btn" type="button">Консультация</button>
               </div>
             </div>
           </nav>
@@ -82,7 +82,7 @@
                   <p class="header__bottom-subtext">Станешь жить полноценной жизнью и обретешь смысл</p>
                 </div>
               </div>
-              <a class="link header__bottom-link" href="#request">Записаться на Консультацию</a>
+              <button class="button header__bottom-btn" type="button">Записаться на Консультацию</button>
             </div>
   
             <div class="header__video-content">
@@ -228,19 +228,19 @@
 
             </div>
           </div>
-          
-
 
         </div>
       
       </div>
     </div>
+  
+<!--Steps-->
 
       <div class="problems__bottom">
         <div class="container">
           <div class="steps__header">
             <h3 class="steps__title">Первый шаг:</h3>
-            <a class="link steps__link" href="#request">Консультация</a>
+            <button class="button steps__btn" type="button">Консультация</button>
           </div>
         </div>
 
@@ -283,12 +283,12 @@
           <img src="images/video_player.svg" alt="видео плеер">
         </a>
       </div>
-      <a class="link video__link" href="#request">Консультация</a>
+      <button class="button video__btn" type="button">Консультация</button>
     </div>
   </section>
 
   <!--About me-->
-  <section class="about-me">
+  <section class="about-me" id="about-me">
     <div class="container">
       <div class="about-me__top">
         <div class="about-me__items">
@@ -308,7 +308,7 @@
               <p class="about-me__text">Я с уверенностью заявляю, что могу довести Вас до результата в любой сфере Вашей жизни. Будь то финансовое благополучие, здоровье или обретение смысла жизни. Единственное, что я не могу сделать &ndash; это принять за Вас решение изменить собственную жизнь и нажать на кнопку &ldquo;Консультация&rdquo; и отправить заявку.</p>
               <p class="about-me__text">Здесь Вы наконец нашли, ту самую возможность изменить свою жизнь в сторону успеха, здоровья, богатства и счастья. Сделайте первый шаг нажмите на кнопку &ldquo;Консультация&rdquo; и оставьте заявку!</p>
             </div>
-            <a class="link about-me__link" href="#request">Консультация</a>
+            <button class="button about-me__btn" type="button">Консультация</button>
           </div>
 
         </div>
@@ -339,7 +339,7 @@
   </section>
 
   <!--Services-->
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <h2 class="title">Пакеты услуг</h2>
       <p class="text">Услуга продается пакетами от 5 сессий</p>
@@ -439,7 +439,7 @@
           <img src="images/video_player.svg" alt="видео плеер">
         </a>
       </div>
-      <a class="link video__link services__link" href="#request">Консультация</a>
+      <button class="button video__btn services__btn" type="button">Консультация</button>
 
     </div>
   </section>
@@ -484,7 +484,7 @@
   </section>
 
   <!--Video Feedback-->
-  <section class="feedback">
+  <section class="feedback" id="feedback">
     <div class="feedback__container">
       <h2 class="title__acccent feedback__title">Отзывы клиентов</h2>
       <p class="text feedback__text">Текстовые и видео отзывы моих клиентов</p>
@@ -697,7 +697,8 @@
             <input class="question__content-input" type="checkbox" id="faq_1">
             <label class="question__content-title" for="faq_1">ГИПНОЗ &ndash; ЭТО ОТ ДЬЯВОЛА И ОБМАН, Я НЕ&nbspПОДДАЮСЬ ГИПНОЗУ!</label>
             <div class="question__content-text">
-              <p>Для восхождения на Эльбрус (как и на любую серьезную вершину) важнее не ваше физическое состояние, а акклиматизация. Например, восхождения на Эльбрус без предварительной акклиматизации за 7&ndash;8 дней (не считая дня прилета и дня отлета) 	&ndash; это минимальная акклиматизация и очень, ну просто очень серьезный удар по организму.</p>
+              <p>Термин &laquo;Гипноз&raquo; впервые был предложен около 1820 года Этьеном Феликосм д&rsquo;Энэн де Кувиллер. В 1842 году английский врач Джеймс Брэнд показал, что при фиксации на какой-либо предмет, человек входит в особое состояние ума и тела, которое назвали &laquo;гипнозом&raquo; в 1843 году.  Такое состояние еще называют трансом. Теперь задайте себе вопрос, в каком году образовалась любая религия и сравните с гипнозом.</p>
+              <p>Гипноз и трансовое состояние являются основной частью человеческой жизни и психики. Человек находится в состоянии гипноза от 4 до 9 часов в день постоянно. Это естественное состояние каждого человека.</p>
             </div>
         </div>
 
@@ -706,7 +707,7 @@
             <input class="question__content-input" type="checkbox" id="faq_2">
             <label class="question__content-title question__content-title--2" for="faq_2">БУДУТ ЛИ В ГИПНОЗЕ ВНУШАТЬ МНЕ, ЧТО-ТО ПРОТИВ МОЕЙ ВОЛИ И ЗОМБИРОВАТЬ МЕНЯ?</label>
             <div class="question__content-text">
-              <p>Комбинезон, теробелье, кошки, ледоруб, система страховки с двумя усами самостраховки и два карабина, палки трекинговые &ndash; телескопические, термос, фонарь налобный, рюкзак грузовой на 80&ndash;100 литров, штурмовой рюкзак на 30&ndash;50 литров. Полный список необходимого, мы высылаем после оплаты тура.</p>
+              <p>Гипноз &ndash; это естественное состояние человека. Человек находится в нем от 4 до 8 часов каждый день, находясь в полной осознанности. Гипноз состоит из 2 основных частей &ndash; это транс и внушение. Транс &ndash; это естественное состояние человека. Внушение же работает только с согласия и принятия информации самим человеком. То есть внушить, что-либо Вам на сеансе вопреки вашим желаниям гипнотерапевт не сможет, тем более зомбировать.</p>
             </div>
           </div>
         </div>
@@ -717,7 +718,7 @@
             <input class="question__content-input" type="checkbox" id="faq_3">
             <label class="question__content-title question__content-title--2" for="faq_3">ЕСТЬ ТО, ЧТО Я НЕ ХОЧУ РАССКАЗЫВАТЬ НИКОМУ И ДАЖЕ ГИПНОТЕРАПЕВТУ. КАК&nbspБЫТЬ&nbspВ&nbspЭТОЙ СИТУАЦИИ?</label>
             <div class="question__content-text">
-              <p>Группы формируются небольшие, чтобы гид мог уделить время каждому участнику тура. В группе, как правило, от  5 до 8 человек.</p>
+              <p>Во время работы гипнотерапевт и клиент работают в связке. Гипнотерапевт выступает проводником, а клиент медиумом. В этом случае проводнику лучше знать, что происходит в сознании клиента, для выполнения более качественной работы и довести сессию до результата. Если же клиент не готов рассказывать то, что он видит в состоянии гипноза, то он может об этом сказать гипнотерапевту, в таком случае гарантия результата будет исключена. </p>
             </div>
           </div>
         </div>
@@ -727,7 +728,10 @@
             <input class="question__content-input" type="checkbox" id="faq_4">
             <label class="question__content-title" for="faq_4">В КАКОМ ФОРМАТЕ ПРОХОДИТ ТЕРАПИЯ?</label>
             <div class="question__content-text">
-              <p>Рюкзак для высокогорной ночевки будет весить 20&ndash;25 кг для мужчин и 15&ndash;18 кг для женщин. На само восхождение на вершину, рюкзак будет весить до 10 кг для мужчин и до 7 кг для женщин.</p>
+              <p>Терапия или сессия проходит в онлайн режиме через программу Skype.</p>
+              <p>Обязательным условием проведения сессии является то, что клиент должен быть готов к проведению сессии: сходить в туалет перед сеансом, не употреблять кофеин за 3 часа до сессии не употреблять никаких антидепрессантов и успокоительных лекарств минимум за сутки до сессии.</p>
+              <p>Клиенту необходимо будет подготовиться: выключить все отвлекающие факторы перед сессией, зарядить все необходимые электронные устройства для работы. Создать себе такую обстановку, чтоб никто из родных не отвлекал от работы. Важно найти тихое место либо иметь наушники, через которые не будут слышны отвлекающие шумы и звуки.</p>
+              <p>Все сессии проводятся под видео запись и данное видео отправляется клиенту по окончанию сессии. Данное видео &ndash; это обязательный материал работы, как отчетность и напоминание клиенту о проведенное сессии.</p>
             </div>
           </div>
         </div>
@@ -737,7 +741,7 @@
             <input class="question__content-input" type="checkbox" id="faq_5">
             <label class="question__content-title" for="faq_5">БУДУ ЛИ Я ПОМНИТЬ ВСЕ, ЧТО БУДЕТ ПРОИСХОДИТЬ НА СЕАНСЕ?</label>
             <div class="question__content-text">
-              <p>На тропе могут быть трещины, погода может измениться. Гид готов к любым ситуациям, и отлично знает маршрут. Поэтому каждый участник должен беспрекословно выполнять указания гида.</p>
+              <p>Да, во время гипноза, клиент помнит все, что происходит в сеансе, так как является его участником. Сеанс гипноза подразумевает, что клиент должен находиться в сознательном состоянии во время работы. Если клиенту что-либо не понравится, он спокойно может выйти из состояния гипноза и прервать сессию. Все что будет происходить во время сеанса, клиент будет видеть, чувствовать и осознавать.</p>
             </div>
           </div>
         </div>
@@ -747,7 +751,9 @@
             <input class="question__content-input" type="checkbox" id="faq_6">
             <label class="question__content-title" for="faq_6">КАКИЕ ГАРАНТИИ РЕЗУЛЬТАТА ВЫ ДАЕТЕ?</label>
             <div class="question__content-text">
-              <p>На тропе могут быть трещины, погода может измениться. Гид готов к любым ситуациям, и отлично знает маршрут. Поэтому каждый участник должен беспрекословно выполнять указания гида.</p>
+              <p>Перед работой с гипнотерапевтом, клиент проходит консультацию о правилах совместной работы, чтоб достичь наилучшего результата в работе. Также проходит диагностику, которая определит стратегический план работы.</p>
+              <p>Клиент и Гипнотерапевт работают в связке, где клиент выступает медиумом, а терапевт проводником. Поэтому их зона ответственности делится 50х50. Где по 50% ответственности несут оба.</p>
+              <p>Я даю 100% гарантию на выполнение своих 50% работы и доведения клиента до результата, исходя из моей зоны ответственности. Но если клиент не будет следовать указаниям, то сессия не приведет его к желаемым результатам. В таком случае я верну клиенту его 50% оплаченных денег и прекращу совместную работу. Иного случая не достичь результата быть не может.</p>
             </div>
           </div>
         </div>
@@ -757,7 +763,8 @@
             <input class="question__content-input" type="checkbox" id="faq_7">
             <label class="question__content-title" for="faq_7">КАК БЫСТРО Я ПОЧУВСТВУЮ РЕЗУЛЬТАТ?</label>
             <div class="question__content-text">
-              <p>На тропе могут быть трещины, погода может измениться. Гид готов к любым ситуациям, и отлично знает маршрут. Поэтому каждый участник должен беспрекословно выполнять указания гида.</p>
+              <p>Результат Вы почувствуете сразу после первого сеанса. Но для того чтобs решить проблему и проработать ее на корню, может понадобиться более чем один сеанс. Поэтому услуга предоставляется пакетами. Какой пакет услуг необходим клиенту, определяется после консультативной диагностики.</p>
+              <p>Как правило, одна проблема устраняется от 1 до 8 сессий.</p>
             </div>
           </div>
         </div>
@@ -798,16 +805,16 @@
       </div>
 
       <div class="contact__socials">
-        <a class="contact__socials-link" href="#">
+        <a class="contact__socials-link" href="#" target="_blank">
           <img class="contact__socials-icon" src="images/whatsapp.svg" alt="whatsapp">
         </a>
-        <a class="contact__socials-link" href="#">
+        <a class="contact__socials-link" href="https://www.youtube.com/@ARTIOM_PAPIAN" target="_blank">
           <img class="contact__socials-icon" src="images/youtube.svg" alt="youtube">
         </a>
-        <a class="contact__socials-link" href="#">
+        <a class="contact__socials-link" href="https://www.facebook.com/papean.art" target="_blank">
           <img class="contact__socials-icon" src="images/facebook.svg" alt="facebook">
         </a>
-        <a class="contact__socials-link" href="#">
+        <a class="contact__socials-link" href="https://www.instagram.com/artiom_papean" target="_blank">
           <img class="contact__socials-icon" src="images/instagram.svg" alt="instagram">
         </a>
       </div>
@@ -819,6 +826,49 @@
 
     </div>
   </footer>
+
+  <!--Modal-->
+
+  <div class="modal">
+    <div class="modal__content">
+      <button class="modal__close" type="button">
+        <svg class="modal__icon" width="17" height="17" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.1047 10.0008L19.7709 1.33447C20.0761 1.02935 20.0761 0.534663 19.7709 0.229585C19.4658 -0.0754924 18.9711 -0.0755315 18.6661 0.229585L9.99975 8.8959L1.33347 0.229585C1.02836 -0.0755315 0.533671 -0.0755315 0.228593 0.229585C-0.0764842 0.534702 -0.0765233 1.02939 0.228593 1.33447L8.89487 10.0007L0.228593 18.667C-0.0765233 18.9722 -0.0765233 19.4669 0.228593 19.7719C0.381132 19.9245 0.581093 20.0007 0.781053 20.0007C0.981014 20.0007 1.18094 19.9245 1.33351 19.7719L9.99975 11.1057L18.666 19.7719C18.8186 19.9245 19.0185 20.0007 19.2185 20.0007C19.4184 20.0007 19.6184 19.9245 19.7709 19.7719C20.0761 19.4668 20.0761 18.9721 19.7709 18.667L11.1047 10.0008Z" fill="black"/>
+        </svg>      
+      </button>
+      <h3 class="contact__form-title modal__form-title">Обратная связь</h3>
+      <p class="modal__text">Оставьте заявку и я обязательно с вами свяжусь</p>
+      <form class="form modal__form" action="/" method="post">
+  
+        <div class="modal__form-inf">
+  
+          <div class="modal__form-group">
+            <p class="form__text">ФИО</p>
+            <input class="form__input-text" type="text" required>
+          </div>
+  
+          <div class="modal__form-group">
+            <p class="form__text">Почта</p>
+            <input class="form__input-mail" type="email" required>
+          </div>
+
+          <div class="modal__form-group">
+            <p class="form__text">Номер тел (Whatsapp / Telegram)</p>
+            <input class="form__input-tel" type="tel" required>
+          </div>
+  
+          <div class="modal__form-group">
+            <p class="form__text-area">Кратко опишите проблему</p>
+            <textarea required></textarea>
+          </div>
+  
+        </div>
+  
+        <button class="form__btn modal__btn" type="submit">Оставить Заявку</button>
+    </form>
+  </div>
+</div>
+
 
   <script src="js/main.min.js"></script>
 </body>
