@@ -572,6 +572,9 @@
     @extend %manrope-800;
     margin: 0 auto;
   }
+  &__sum-first{
+    text-decoration: line-through;
+  }
   &__clip-path{
     background: #fff;
     z-index: 10;
