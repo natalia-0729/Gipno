@@ -3,6 +3,10 @@
     font-size: 48px;
     line-height: 61px;
   }
+  .text{
+    font-size: 18px;
+    line-height: 22px;
+  }
   .header{
     &__bottom{
       padding-top: 88px;
@@ -44,7 +48,7 @@
       font-size: 16px;
       line-height: 36px;
     }
-    &__bottom-link{
+    &__bottom-btn{
       padding-left: 45px;
       padding-right: 45px;
       font-size: 18px;
@@ -78,7 +82,7 @@
     }
   }
   .video{
-    padding-top: 58px;
+    padding: 58px 0 90px;
     &__title{
       margin-bottom: 78px;
     }
@@ -402,6 +406,9 @@
 }
 
 @media (max-width: 1024px){
+  .menu__list-link--active,  .menu__list-link:hover{
+    color: #7167AC;
+  }
   .steps{
     &__inner{
       display: block;
@@ -427,14 +434,11 @@
         z-index: 1;
       }
     }
-    &__link{
+    &__btn{
       margin-right: 0;
     }
   }
   .video{
-    &::before{
-      left: 45%;
-    }
     &__screen{
       border-bottom: 8px solid transparent;
     }
@@ -450,14 +454,12 @@
       margin-right: 15px;
     }
   }
-  .services, .feedback, .contact{
-    &::before{
-     left: 45%;
-    }
-  }
   .contact{
     border-bottom: 8px solid #7167AC;
 
+    &__socials-link+.contact__socials-link {
+      margin-left: 40px;
+    }
     &__privacy, &__privacy-link{
       display: block;
       margin: 0 auto;
@@ -487,7 +489,7 @@
     &__bottom-title{
       margin-left:  calc( (100vw - 320px)/(950 - 320) * (210 - 0) + 0px);
     }
-    &__bottom-link{
+    &__bottom-btn{
       margin: 0 auto;
       text-align: center;
       display: block;
@@ -517,15 +519,9 @@
       margin: 0;
     }
   }
-  .slick-prev, .slick-next{
-    display: none !important;
-  }
   .video{
     padding-bottom: 130px;
-    &::before{
-      display: none;
-    }
-    &__link{
+    &__btn{
       display: block;
       width: 147px;
       margin: 0 auto;
@@ -573,11 +569,6 @@
     -webkit-transform: translate(-10%, -10%);
     transform: translate(-10%, -10%);
   }
-  .services, .feedback, .questions, .contact{
-    &::before{
-      display: none;
-    }
-  }
   .services{
     &__items{
       display: block;
@@ -624,6 +615,22 @@
     &__link{
       width: 140px;
       font-size: 18px;
+    }
+  }
+  .comments{
+    &__slick-prev{
+      left: calc( (100vw - 320px)/(950 - 320) * (390 - 80) + 80px); 
+    }
+     &__slick-next{
+      right: calc( (100vw - 320px)/(950 - 320) * (390 - 80) + 80px); 
+    }
+  }
+  .feedback{
+    &__slick-prev{
+      left: calc( (100vw - 320px)/(950 - 320) * (370 - 80) + 80px); 
+    }
+     &__slick-next{
+      right: calc( (100vw - 320px)/(950 - 320) * (370 - 80) + 80px); 
     }
   }
   .question__content-title::after{
@@ -749,7 +756,7 @@
       transform: translateX(-200%);
       transition: all .5s;
       z-index: 10;
-      border-radius: 0 0 0 6px;
+      border-radius: 0 0 6px 0;
 
       overflow-y: auto;
       overflow-x: hidden;
@@ -771,6 +778,9 @@
       align-items: center;
       padding: 20px 0;
       margin-left: calc( (100vw - 320px)/(820 - 320) * (310 - 50) + 50px);
+    }
+    &__list-item--active::before {
+      background-color: #7167AC;
     }
     &__list-link{
       display: block;
@@ -807,23 +817,30 @@
         margin-left: 25px;
       }
     }
-    &__mobile-link{
+    &__mobile-btn{
       display: block;
       margin: 0 auto;
       width: 202px;
       color: #7167AC;
       border-radius: 6px;
       border: 1px solid #7167AC;
+      background-color: transparent;
       text-align: center;
       font-size: 20px;
       line-height: 24px;
       text-transform: uppercase;
       padding: 10px;
+      cursor: pointer;
     }
   }
 }
 
 @media (max-width: 587px){
+  .video, .services, .feedback, .questions, .contact{
+    &::before{
+      display: none;
+    }
+  }
   .problems{
     &__tablets-label, &__tablets-input[type="checkbox"], &__tablets-input[type="checkbox"]:checked + .problems__content-block {
       height: auto;
@@ -935,11 +952,12 @@
       max-width: 220px;
       margin: 0 auto;
     }
-    &__link{
+    &__btn{
       padding: 10px 20px
     }
   }
   .course{
+    padding-bottom: calc( (100vw - 320px)/(578 - 320) * (56 - 40) + 40px); 
     &__items{
       display: block;
     }
@@ -962,6 +980,12 @@
       margin: 0 auto;
       margin-top: 20px;
     }
+  }
+  .slick-initialized .slick-slide {
+    margin: 0 5px;
+  }
+  .comments, .about-me{
+    padding-bottom: calc( (100vw - 320px)/(578 - 320) * (62 - 40) + 40px); 
   }
 }
 

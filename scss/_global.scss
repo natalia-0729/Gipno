@@ -33,7 +33,7 @@
   @extend %manrope-300;
   max-width: 555px;
 }
-.link{
+.button{
   @extend %montserrat-500;
   color: #fff;
   background-color: #7167AC;
@@ -42,6 +42,8 @@
   letter-spacing: -0.015em;
   border-radius: 6px;
   filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+  border: none;
+  cursor: pointer;
 }
 
 .steps__title, .about-me__title, .contact__form-title{
