@@ -1,10 +1,21 @@
 $(function(){
 
+  //плавный скролл
   $('.menu, a[href*="#"]').on('click', function() {
     $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top
     }, 1500);
     return false;
+  });
+
+  //открытие мобильного меню
+  $('.menu__burger, .menu a').on('click', function(){
+    $('.menu__mobile').toggleClass('menu__mobile--active')
+  
+  });
+  //бургер меню - смена полосок на крестик
+  $('.menu__burger').click(function(){
+    $(this).toggleClass('open');
   });
 
   
@@ -58,15 +69,9 @@ if (window.matchMedia('(max-width: 950px)').matches){
   });
 }
 
-$(function(){
-$('.menu__burger, .menu a').on('click', function(){
-  $('.menu__mobile').toggleClass('menu__mobile--active')
-});
-});
 
-
-
-const buttonElems = document. querySelectorAll('.button, .menu__mobile-btn');
+//модальное окно
+const buttonElems = document. querySelectorAll('.button');
 const modalElem = document. querySelector('.modal');
 
 modalElem.style.cssText = `
