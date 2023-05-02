@@ -4,6 +4,30 @@
 @import 'reset';
 @import 'global';
 
+.blur{
+  z-index:10;
+  background:inherit;
+  width:100%;
+  height:100%;
+  position:relative;
+  top:0;
+  left:0;
+  overflow:inherit;
+  
+  }
+  
+  .blur::before{
+  content:'';
+  width: 62%;
+  height: 62%;
+  background: inherit;
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  background: #6A53AB;
+  filter: blur(125px);
+  }
+
 .header{
   background-color: $accent-bg;
   border-bottom: 12px solid #7167AC;
@@ -33,6 +57,9 @@
     margin-bottom: calc( (100vw - 320px)/(1920 - 320) * (40 - 20) + 20px);
     width: calc( (100vw - 320px)/(1920 - 320) * (509 - 276) + 276px);
     height: calc( (100vw - 320px)/(1920 - 320) * (193 - 102) + 102px);
+
+    z-index: 15;
+    position: relative;
   }
   &__bottom-inner{
     display: flex;
