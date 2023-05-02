@@ -9,6 +9,13 @@
   border-bottom: 12px solid #7167AC;
   &__top{
     border-bottom: 1px solid #7167AC;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #261D3A;
+    z-index: 100;
   }
   &__top-inner{
     display: flex;
@@ -18,7 +25,7 @@
   }
 
   &__bottom{
-    padding-top:  calc( (100vw - 320px)/(1440 - 320) * (88 - 40) + 40px);
+    padding-top:  calc( (100vw - 320px)/(1440 - 320) * (88 - 60) + 60px);
     padding-bottom: 30px;
   }
   &__bottom-img{
@@ -1242,27 +1249,6 @@
 .modal__form-group{
   margin-bottom: 20px;
   position: relative;
-}
-
-/*Media запросы*/
-
-@media(max-width: 587px){
-  .modal__content{
-    padding: 17px 27px;
-  }
-  .modal__form-title{
-    margin-bottom: 0 !important;
-  }
-.modal__btn{
-  margin-bottom: 0 !important;
-  margin-top: 15px !important;
-}
-.modal__form-group {
-  margin-bottom: 0px;
-}
-.modal__text{
-  font-size: 13px;
-}
 }
 
 

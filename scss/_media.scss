@@ -727,26 +727,70 @@
     &__top-inner{
       justify-content: flex-start;
       align-items: center;
-      padding-top: 25px;
+      padding: 20px 0;
     }
     &__logo{
       display: none;
-    }
-    &__bottom{
-      padding-top: 20px;
     }
   }
   .menu{
     &__burger{
       display: block;
-      border: none;
-      background-color: transparent;
       z-index: 20;
       position: relative;
+      
+      width: 35px;
+      height: 17px;
+      position: relative;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      cursor: pointer;
+    
+      span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #7167AC;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 1px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+      }
+      span:nth-child(1) {
+          top: 0px;
+          transform-origin: left center;
+      }
+      span:nth-child(2) {
+          top: 10px;
+          transform-origin: left center;
+      }
+      span:nth-child(3) {
+          top: 20px;
+          transform-origin: left center;
+      }
     }
+    &__burger.open span:nth-child(1) {
+        transform: rotate(45deg);
+        top: -3px;
+        left: 8px;
+        box-shadow: none;
+    }
+    &__burger.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+    &__burger.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 22px;
+        left: 8px;
+        box-shadow: none;
+    }    
     &__mobile{
       position: absolute;
-      height: 100vh;
+      height: auto;
       width: 50vw;
       left: 0;
       top: 0;
@@ -763,6 +807,16 @@
     }
     &__mobile.menu__mobile--active{
       transform: translateX(0%);
+    }
+    &__btn-close{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: all .3s;
     }
     &__list{
       display: block;
@@ -809,7 +863,7 @@
     }
     &__mobile-footer{
       display: block;
-      padding: 40px 0;
+      padding: 25px 0;
       border-top: 1px solid #7167AC;
     }
     &__mobile-socials{
@@ -832,6 +886,8 @@
       text-align: center;
       font-size: 20px;
       line-height: 24px;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 500;
       text-transform: uppercase;
       padding: 10px;
       cursor: pointer;
@@ -1014,6 +1070,24 @@
   }
   .comments, .about-me{
     padding-bottom: calc( (100vw - 320px)/(578 - 320) * (62 - 40) + 40px); 
+  }
+  .modal{
+    &__content{
+      padding: 17px 27px;
+    }
+    &__form-title{
+      margin-bottom: 0 !important;
+    }
+    &__btn{
+      margin-bottom: 0 !important;
+      margin-top: 15px !important;
+    }
+    &__form-group {
+      margin-bottom: 0px;
+    }
+    &__text{
+      font-size: 13px;
+    }
   }
 }
 
