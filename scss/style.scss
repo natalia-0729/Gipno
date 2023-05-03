@@ -4,7 +4,7 @@
 @import 'reset';
 @import 'global';
 
-.blur{
+/*.blur{
   z-index:10;
   background:inherit;
   width:100%;
@@ -20,14 +20,82 @@
   content:'';
   width: 62%;
   height: 62%;
-  background: inherit;
   position: absolute;
   left: 200px;
   top: 0px;
   background: #6A53AB;
   filter: blur(125px);
+  }*/
+
+  .header__blur-btn{
+    position: relative;
+  }
+  .header__blur-btn::before{
+    content: '';
+    background: #9E7DB8;
+    mix-blend-mode: hard-light;
+    filter: blur(15px);
+    width: 374px;
+    height: 55px;
+    position: absolute;
+    margin-left: 150px;
+    top: -6px;
+    left: -6px;
   }
 
+  .problems__blur{
+    position: relative;
+  }
+  .problems__blur::before{
+    content: '';
+    mix-blend-mode: hard-light;
+    filter: blur(37px);
+    width: 99px;
+    height: 62px;
+    position: absolute;
+    left: 65px;
+    top: 10px;
+  }
+  .problems__blur-1::before{
+    background: #7167AC;
+  }
+  .problems__blur-2::before{
+    background: #606DB4;
+  }
+  .problems__blur-3::before{
+    background: #5987B3;
+  }
+  .problems__blur-4::before{
+    background: #61DBA4;
+  }
+
+  .problems__container{
+    position: relative;
+  }
+  .problems__container::before{
+    content: '';
+    background: #FFFFFF;
+    filter: blur(125px);
+    transform: rotate(-127.26deg);
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    right: -85px;
+    top:117px;
+  }
+  .problems__container::after{
+    content: '';
+    background: #FFFFFF;
+    filter: blur(125px);
+    transform: rotate(23.95deg);
+    width: 465px;
+    height: 600px;
+    position: absolute;
+    left: -85px;
+    bottom: 0;
+  }
+
+  /*Header*/
 .header{
   background-color: $accent-bg;
   border-bottom: 12px solid #7167AC;
@@ -245,6 +313,8 @@
   }
   &__items{
     display: flex;
+    position: relative;
+    z-index: 2;
   }
   &__item{
     max-width: 280px;
