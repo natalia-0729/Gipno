@@ -680,7 +680,6 @@
     padding-bottom: 130px;
     &__btn{
       display: block;
-      width: 147px;
       margin: 0 auto;
     }
   }
@@ -805,6 +804,9 @@
     &__inner{
       margin-bottom: 0;
       margin-right: calc( (100vw - 588px)/(950 - 588) * (40 - 20) + 20px);
+    }
+    &__items{
+      margin-left: 0;
     }
     &__item{
       margin-left: calc( (100vw - 588px)/(950 - 588) * (40 - 20) + 20px);

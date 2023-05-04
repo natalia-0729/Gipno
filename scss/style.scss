@@ -823,6 +823,10 @@
     margin: 0 auto;
     width: 150px;
   }
+  &__btn{
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 /*Course*/
@@ -960,7 +964,7 @@
   }
   &__items{
     margin-bottom: 37px;
-    margin-left: -2px;
+    margin-left: -3px;
   }
   &__item{
     max-width: 373px;
