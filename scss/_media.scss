@@ -639,7 +639,7 @@
       margin-bottom: 35px;
     }
     &__bottom-title{
-      margin-left:  calc( (100vw - 320px)/(950 - 320) * (210 - 0) + 0px);
+      margin-left:  calc( (100vw - 320px)/(950 - 320) * (210 - 20) + 20px);
     }
     &__bottom-btn{
       margin: 0 auto;
@@ -655,7 +655,7 @@
       width: auto;
       img{
         margin-top: 0;
-        width: calc( (100vw - 320px)/(950 - 320) * (193 - 100) + 100px);
+        width: calc( (100vw - 320px)/(950 - 320) * (193 - 130) + 130px);
       }
     }
     &__video-text{
@@ -893,7 +893,7 @@
       display: none;
     }
     &__bottom{
-      padding-top: 60px;
+      padding-top: 80px;
     }
   }
   .menu{
@@ -1061,6 +1061,15 @@
 @media (max-width: 587px){
   .video, .services, .feedback, .questions, .contact{
     &::before{
+      display: none;
+    }
+  }
+  .header{
+    &__bottom-text{
+      margin-top: -35px;
+      margin-bottom:  calc( (100vw - 320px)/(587 - 320) * (55 - 10) + 10px);
+    }
+    &__video-text{
       display: none;
     }
   }
