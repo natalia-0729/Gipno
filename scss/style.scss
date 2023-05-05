@@ -1015,7 +1015,7 @@
     height: calc( (100vw - 950px)/(1920 - 950) * (200 - 90) + 90px);
   }
   &__descr{
-    font-size: calc( (100vw - 950px)/(1920 - 950) * (20 - 12) + 12px);
+    font-size: calc( (100vw - 950px)/(1920 - 950) * (20 - 13) + 13px);
     line-height: calc( (100vw - 950px)/(1920 - 950) * (24 - 16) + 16px);
     text-transform: uppercase;
     color: #7167AC;
@@ -1025,6 +1025,10 @@
     font-weight: 800;
     padding-top: calc( (100vw - 320px)/(1920 - 320) * (15 - 7) + 7px);
     padding-bottom: calc( (100vw - 320px)/(1920 - 320) * (15 - 7) + 7px);
+  
+    span{
+      display: block;
+    }
   }
 }
 
@@ -1393,7 +1397,7 @@
     color: #777;
     /*@extend %manrope-300;*/
     font-family: 'Manrope', sans-serif;
-    font-weight: 800;
+    font-weight: 300;
     margin-top: calc( (100vw - 1024px)/(1920 - 1024) * (13 - 10) + 10px);
   }
   &__text-area{

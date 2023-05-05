@@ -795,7 +795,7 @@
       background-position: center bottom;
     }
     &__descr{
-      font-size: 12px;
+      font-size: 13px;
       line-height: 16px;
     }
     &__text{
@@ -806,7 +806,7 @@
       margin-right: calc( (100vw - 588px)/(950 - 588) * (40 - 20) + 20px);
     }
     &__items{
-      margin-left: 0;
+      margin-left: -1px;
     }
     &__item{
       margin-left: calc( (100vw - 588px)/(950 - 588) * (40 - 20) + 20px);
@@ -1243,6 +1243,9 @@
   .feedback{
     &__text{
       margin-bottom: 15px;
+    }
+    &__iner{
+      margin-right: 0;
     }
     &__items{
       margin-bottom: 20px;
