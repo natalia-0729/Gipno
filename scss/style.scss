@@ -137,6 +137,8 @@
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     margin-left: 60px;
+    position: relative;
+    z-index: 2;
     span{
       display: block;
       color: #62B791;
