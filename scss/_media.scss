@@ -37,8 +37,10 @@
     &__video-link::before{
       width: 174px;
       height: 174px;
-      left: 30px;
-      bottom: 50px;
+      /*left: 30px;
+      bottom: 50px;*/
+      left: -15px;
+      bottom: 0;
     }
     &__bottom-content{
       margin-top: -155px;
@@ -543,6 +545,9 @@
     left: calc( (100vw - 320px)/(1024 - 320) * (280 - 3) + 3px);
   }
   .steps{
+    &__line{
+      animation: none;
+    }
     &__inner{
       display: block;
     }
@@ -578,8 +583,8 @@
     &__screen{
       border-bottom: 8px solid transparent;
 
-      img:hover{
-        transform: none;
+      img{
+        animation: none;
       }
     }
     &__btn:hover{
