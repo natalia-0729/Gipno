@@ -631,6 +631,7 @@
     &__privacy, &__privacy-link{
       display: block;
       margin: 0 auto;
+      margin-bottom: 20px;
       text-align: center;
     }
     &__privacy-link{
@@ -1290,8 +1291,14 @@
   .comments__inner::before{
     display: none;
   }
-  .contact__form{
-    max-height: 425px;
+  .contact{
+    &__form{
+      max-height: 425px;
+    }
+    &__footer-text{
+      font-size: 10px;
+      line-height: 16px;
+    }
   }
   .form__inf{
     height: 245px;

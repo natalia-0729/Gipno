@@ -1353,6 +1353,7 @@
   &__privacy{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
   }
   &__privacy-link{
     color: $subtitle;
@@ -1367,6 +1368,16 @@
   }
   &__privacy-link + .contact__privacy-link{
     margin-left: 17px;
+  }
+  &__footer-text{
+    font-size: 13px;
+    line-height: 22px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    color: $subtitle;
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
   }
 }
 
