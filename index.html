@@ -815,7 +815,7 @@
   <footer class="contact" id="request">
     <div class="container video__container">
       <h2 class="title__acccent contact__title">Контакты</h2>
-      <p class="text contact__text">Оставьте заявку и я обязательно с вами свяжусь</p>
+      <p class="text contact__text">Вся информация, предоставленная Вами, является конфиденциальной и нигде афишироваться не будет, является дополнением к карточке клиента. Обязательно заполните все поля и отвечайте максимально честно.</p>
 
       <div class="contact__form">
         <div class="contact__items">
@@ -823,8 +823,8 @@
             <img class="contact__img" src="images/request@1.jpg" srcset="images/request@2x.jpg 2x" alt="Артем Папян">
           </div>
           <div class="contact__item contact__item-right">
-            <h3 class="contact__form-title">Обратная связь</h3>
-            <p class="contact__form-text contact__desktop-text">Обязательно! заполните все поля верной информацией, чтоб я мог с вами связаться.</p>
+            <h3 class="contact__form-title">Заявка клиента</h3>
+            <p class="contact__form-text contact__desktop-text">Обязательно! заполните все поля верной информацией.</p>
             <p class="contact__mobile-text contact__form-text">Оставьте заявку и я обязательно с вами свяжусь</p>
          
             <form class="form" action="mail.php" method="post">
@@ -833,15 +833,89 @@
                 <input type="hidden" name="admin_email" value="apapian@mail.ru">
                 <input type="hidden" name="form_subject" value="Contact form">
                 <!-- END Hidden Required Fields -->
-              <p class="form__text">ФИО</p>
-              <input class="form__input-text" type="text" required>
-              <p class="form__text">Почта</p>
-              <input class="form__input-mail" type="email" required>
-              <p class="form__text">Номер тел (Whatsapp / Telegram)</p>
-              <input class="form__input-tel" type="tel" required>
-              <p class="form__text-area">Кратко опишите проблему</p>
-              <textarea required></textarea>
-              <button class="form__btn" type="submit">Оставить Заявку</button>
+                <div class="form__inf">
+  
+                  <div class="form__group">
+                    <p class="form__text">ФИО:</p>
+                    <input class="form__input form__input-text" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Возраст (полных лет):</p>
+                    <input class="form__input form__input-age" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text-area">Кратко опишите проблему:</p>
+                    <textarea required></textarea>
+                  </div>
+                  <div class="modal__form-group">
+                    <p class="form__text">Семейное положение (есть ли дети):</p>
+                    <input class="form__input form__input-family" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Страна и город проживания:</p>
+                    <input class="form__input form__input-globe" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Сфера деятельности:</p>
+                    <input class="form__input form__input-work" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text-area">Как долго эта проблема у Вас?</p>
+                    <textarea required></textarea>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Откуда Вы обо мне узнали?</p>
+                    <input class="form__input form__input-search" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Насколько для вас сейчас актуально решение Вашей проблемы? (Где 0 — совсем не важно, а 10 – жить не можете уже с этой проблемой):</p>
+                    <input class="form__input form__input-rating" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text-area">Почему Вы выбрали именно меня?</p>
+                    <textarea required></textarea>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Находитесь ли Вы на учете у психиатра?</p>
+                    <input class="form__input form__input-doctor" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Принимаете ли психотропные препараты и успокоительные?</p>
+                    <input class="form__input form__input-tablets" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">На каком уровне дохода сейчас находитесь, последние 3 месяца?</p>
+                    <input class="form__input form__input-money" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Каким видите его через год, работая над собой?</p>
+                    <input class="form__input form__input-profit" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Формируете ли вы подушку безопасности?</p>
+                    <input class="form__input form__input-safe" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Есть ли какие-то дополнительные расходы (ипотеки и кредиты)?</p>
+                    <input class="form__input form__input-bank" type="text" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text-area">А если посмотреть на Вашу проблему со стороны, чего не хватает, по-вашему мнению, лично Вам для выхода на новый уровень?</p>
+                    <textarea required></textarea>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">E-mail:</p>
+                    <input class="form__input form__input-mail" type="email" required>
+                  </div>
+                  <div class="form__group">
+                    <p class="form__text">Номер тел. (Whatsapp / Telegram):</p>
+                    <input class="form__input form__input-tel" type="tel" required>
+                  </div>
+                </div>
+                
+                <div>
+                  <button class="form__btn" type="submit">Оставить Заявку</button>
+                </div>
             </form>
           </div>
         </div>
@@ -879,8 +953,8 @@
           <path d="M11.1047 10.0008L19.7709 1.33447C20.0761 1.02935 20.0761 0.534663 19.7709 0.229585C19.4658 -0.0754924 18.9711 -0.0755315 18.6661 0.229585L9.99975 8.8959L1.33347 0.229585C1.02836 -0.0755315 0.533671 -0.0755315 0.228593 0.229585C-0.0764842 0.534702 -0.0765233 1.02939 0.228593 1.33447L8.89487 10.0007L0.228593 18.667C-0.0765233 18.9722 -0.0765233 19.4669 0.228593 19.7719C0.381132 19.9245 0.581093 20.0007 0.781053 20.0007C0.981014 20.0007 1.18094 19.9245 1.33351 19.7719L9.99975 11.1057L18.666 19.7719C18.8186 19.9245 19.0185 20.0007 19.2185 20.0007C19.4184 20.0007 19.6184 19.9245 19.7709 19.7719C20.0761 19.4668 20.0761 18.9721 19.7709 18.667L11.1047 10.0008Z" fill="black"/>
         </svg>      
       </button>
-      <h3 class="contact__form-title modal__form-title">Обратная связь</h3>
-      <p class="modal__text">Оставьте заявку и я обязательно с вами свяжусь</p>
+      <h3 class="contact__form-title modal__form-title">Заявка клиента</h3>
+      <p class="modal__text">Вся информация, предоставленная Вами, является конфиденциальной и служит дополнением к карточке клиента. Отвечайте максимально честно.</p>
       <form class="form modal__form" action="mail.php" method="post">
         <!-- Hidden Required Fields -->
         <input type="hidden" name="project_name" value="papeanartiom.com">
@@ -890,31 +964,103 @@
         <div class="modal__form-inf">
   
           <div class="modal__form-group">
-            <p class="form__text">ФИО</p>
-            <input class="form__input-text" type="text" required>
+            <p class="form__text">ФИО:</p>
+            <input class="form__input form__input-text" type="text" required>
           </div>
-  
           <div class="modal__form-group">
-            <p class="form__text">Почта</p>
-            <input class="form__input-mail" type="email" required>
+            <p class="form__text">Возраст (полных лет):</p>
+            <input class="form__input form__input-age" type="text" required>
           </div>
-
           <div class="modal__form-group">
-            <p class="form__text">Номер тел (Whatsapp / Telegram)</p>
-            <input class="form__input-tel" type="tel" required>
-          </div>
-  
-          <div class="modal__form-group">
-            <p class="form__text-area">Кратко опишите проблему</p>
+            <p class="form__text-area">Кратко опишите проблему:</p>
             <textarea required></textarea>
           </div>
-  
+          <div class="modal__form-group">
+            <p class="form__text">Семейное положение (есть ли дети):</p>
+            <input class="form__input form__input-family" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">Страна и город проживания:</p>
+            <input class="form__input form__input-globe" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">Сфера деятельности:</p>
+            <input class="form__input form__input-work" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text-area">Как долго эта проблема у Вас?</p>
+            <textarea required></textarea>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">Откуда Вы обо мне узнали?</p>
+            <input class="form__input form__input-search" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">Насколько для вас сейчас актуально решение Вашей проблемы? (Где 0 — совсем не важно, а 10 – жить не можете уже с этой проблемой):</p>
+            <input class="form__input form__input-rating" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text-area">Почему Вы выбрали именно меня?</p>
+            <textarea required></textarea>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">Находитесь ли Вы на учете у психиатра?</p>
+            <input class="form__input form__input-doctor" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">Принимаете ли психотропные препараты и успокоительные?</p>
+            <input class="form__input form__input-tablets" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">На каком уровне дохода сейчас находитесь, последние 3 месяца?</p>
+            <input class="form__input form__input-money" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">Каким видите его через год, работая над собой?</p>
+            <input class="form__input form__input-profit" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">Формируете ли вы подушку безопасности?</p>
+            <input class="form__input form__input-safe" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">Есть ли какие-то дополнительные расходы (ипотеки и кредиты)?</p>
+            <input class="form__input form__input-bank" type="text" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text-area">А если посмотреть на Вашу проблему со стороны, чего не хватает, по-вашему мнению, лично Вам для выхода на новый уровень?</p>
+            <textarea required></textarea>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">E-mail:</p>
+            <input class="form__input form__input-mail" type="email" required>
+          </div>
+          <div class="modal__form-group">
+            <p class="form__text">Номер тел. (Whatsapp / Telegram):</p>
+            <input class="form__input form__input-tel" type="tel" required>
+          </div>
         </div>
-  
-        <button class="form__btn modal__btn" type="submit">Оставить Заявку</button>
+        
+        <div>
+          <button class="form__btn modal__btn" type="submit">Оставить Заявку</button>
+        </div>
     </form>
   </div>
 </div>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6463d875ad80445890ed537c/1h0j0b2vl';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+<!--End of Tawk.to Script-->
 
   <script src="js/main.min.js"></script>
 </body>
