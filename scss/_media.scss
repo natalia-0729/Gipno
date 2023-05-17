@@ -314,7 +314,7 @@
       max-width: 1060px;
     }
     &__item-right{
-      padding: 0 45px 0 35px ;
+      padding: 0 20px 0 35px ;
     }
     &__form-text{
       font-size: 18px;
@@ -325,6 +325,9 @@
   .form{
     textarea{
       height: 135px;
+    }
+    &__inf{
+      height: 380px;
     }
     &__text{
       margin-top: 13px;
@@ -337,8 +340,13 @@
       margin-bottom: 35px;
     }
   }
-  .modal__content{
-    max-width: 620px;
+  .modal{
+    &__content{
+      max-width: 620px;
+    }
+    &__form-inf{
+      height: 330px;
+    }
   }
 }
 
@@ -403,6 +411,11 @@
   }
   .feedback__container::after{
     left: calc( (100vw - 1440px)/(1555 - 1440) * (55 - 5) + 5px);
+  }
+  .modal{
+    &__form-inf{
+      height: 350px;
+    }
   }
 }
 
@@ -556,6 +569,7 @@
     }
     &__items + .steps__items{
       margin-top: 30px;
+      margin-left: 0;
     }
     &__items-2{
       position: relative;
@@ -835,26 +849,22 @@
     &__item-left{
       display: none;
     }
+    &__item-right{
+     width: 100%;
+    }
     &__form{
       margin-top: 0;
       padding: 23px 0;
-      max-width: calc( (100vw - 320px)/(950 - 320) * (580 - 280) + 280px);
+      max-width: calc( (100vw - 320px)/(950 - 320) * (550 - 280) + 280px);
       margin-bottom: 50px;
     }
     &__form-title{
       margin-bottom: 10px;
     }
-    &__desktop-text{
-      display: none;
-    }
     &__form-text{
       font-size: 14px;
       line-height: 16px;
-    }
-    &__mobile-text{
       margin: 0 auto;
-      display: block;
-      max-width: 245px;
     }
     &__item-right{
       padding-left: 20px;
@@ -862,6 +872,9 @@
     }
   }
   .form{
+    &__inf{
+      height: 320px;
+    }
     input, textarea{
       max-width: none;
     }
@@ -878,7 +891,7 @@
     &__text, &__text-area{
       font-size: 13px;
     }
-    &__text, &__text-area{
+    &__text-area{
       margin-top: 10px;
     }
   }
@@ -1059,6 +1072,14 @@
       text-transform: uppercase;
       padding: 10px;
       cursor: pointer;
+    }
+  }
+  .modal{
+    &__form-inf {
+      height: 335px;
+    }
+    &__text{
+      margin-bottom: 10px;
     }
   }
 }
@@ -1269,9 +1290,16 @@
   .comments__inner::before{
     display: none;
   }
+  .contact__form{
+    max-height: 425px;
+  }
+  .form__inf{
+    height: 245px;
+  }
   .modal{
     &__content{
       padding: 17px 27px;
+      max-height: 440px;
     }
     &__form-title{
       margin-bottom: 0 !important;
@@ -1279,6 +1307,11 @@
     &__btn{
       margin-bottom: 0 !important;
       margin-top: 15px !important;
+    }
+    &__form-inf{
+      max-height: 238px;
+      padding: 0;
+      padding-right: 15px;
     }
     &__form-group {
       margin-bottom: 0px;
@@ -1320,4 +1353,4 @@
       margin-right: 10px;
     }
   }
-  }
+}

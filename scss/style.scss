@@ -406,6 +406,9 @@
   }
   &__items{
     display: flex;
+    &-2{
+      margin-left: 35px;
+    }
   }
   &__item{
     max-width: 220px;
@@ -610,11 +613,11 @@
 }
 .diplom__items img:focus {
   position: fixed;
-  top: 50%;
+  top: 54.5%;
   left: 50%;
   z-index: 31;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   outline: none;
   pointer-events: none;
   -webkit-transform: translate(-50%, -50%);
@@ -1286,9 +1289,11 @@
   }
   &__text{
     color: $subtitle;
+    max-width: 650px;
   }
   &__form{
     max-width: calc( (100vw - 1024px)/(1920 - 1024) * (1060 - 744) + 744px);
+    max-height: 615px;
     margin: 0 auto;
     background-color: $subtitle;
     border-radius: 6px;
@@ -1302,9 +1307,13 @@
   &__items{
     display: flex;
   }
+  &__item-left{
+    width: 50%;
+  }
   &__item-right{
-    padding-left: calc( (100vw - 1024px)/(1920 - 1024) * (35 - 20) + 20px);
+    padding-left: 20px;
     padding-right: calc( (100vw - 1024px)/(1920 - 1024) * (45 - 20) + 20px);
+    width: 50%;
   }
   &__form-title,  &__form-text{
     text-align: center;
@@ -1371,11 +1380,52 @@
     outline: none;
     width: 100%;
     background-color: transparent;
-    padding: 0 5px 8px 30px;
+    padding: 0 5px 10px 30px;
     max-width: 440px;
+  }
+  &__inf{
+    overflow-y: scroll;
+    height: calc( (100vw - 950px)/(1920 - 950) * (380 - 244) + 244px);
+    padding: 0 15px;
   }
   &__input-text{
     background: url('../images/icon_profile.svg') no-repeat left;
+  }
+  &__input-age{
+    background: url('../images/icon_calendar.svg') no-repeat left;
+  }
+  &__input-family{
+    background: url('../images/icon_family.svg') no-repeat left;
+  }
+  &__input-globe{
+    background: url('../images/icon_globe.svg') no-repeat left;
+  }
+  &__input-work{
+    background: url('../images/icon_work.svg') no-repeat left;
+  }
+  &__input-search{
+    background: url('../images/icon_search.svg') no-repeat left;
+  }
+  &__input-rating{
+    background: url('../images/icon_rating.svg') no-repeat left;
+  }
+  &__input-doctor{
+    background: url('../images/icon_doctor.svg') no-repeat left;
+  }
+  &__input-tablets{
+    background: url('../images/icon_tablets.svg') no-repeat left;
+  }
+  &__input-money{
+    background: url('../images/icon_money.svg') no-repeat left;
+  }
+  &__input-profit{
+    background: url('../images/icon_profit.svg') no-repeat left;
+  }
+  &__input-safe{
+    background: url('../images/icon_safe.svg') no-repeat left;
+  }
+  &__input-bank{
+    background: url('../images/icon_bank.svg') no-repeat left;
   }
   &__input-mail{
     background: url('../images/icon_email.svg') no-repeat left;
@@ -1446,7 +1496,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  z-index: 100;
+  z-index: 10000000000;
   background-color: rgba(0, 0, 0, 0.5);
 
   display: flex;
@@ -1467,17 +1517,24 @@
     /*@extend %manrope-300;*/
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
-    max-width: 200px;
+    max-width: 450px;
     margin: 0 auto;
+    margin-bottom: 15px;
   }
   &__content{
     position: relative;
     width: 100%;
     max-width: calc( (100vw - 320px)/(1920 - 320) * (620 - 280) + 280px);
+    height: 570px;
     padding: 27px;
     background: #EDEDED;
     border-radius: 6px;
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  &__form-inf{
+    overflow-y: scroll;
+    height:calc( (100vw - 1440px)/(1920 - 1440) * (330 - 355) + 355px);
+    padding: 0 15px;
   }
   &__close{
     position: absolute;
