@@ -314,7 +314,7 @@
       max-width: 1060px;
     }
     &__item-right{
-      padding: 0 20px 0 35px ;
+      padding: 20px 20px 0 35px ;
     }
     &__form-text{
       font-size: 18px;
@@ -323,11 +323,11 @@
     }
   }
   .form{
-    textarea{
+    /*textarea{
       height: 135px;
-    }
+    }*/
     &__inf{
-      height: 380px;
+      height: 360px;
     }
     &__text{
       margin-top: 13px;
@@ -878,9 +878,9 @@
     input, textarea{
       max-width: none;
     }
-    textarea{
+    /*textarea{
       height: 80px;
-    }
+    }*/
     &__btn{
       width: 137px;
       font-size: 12px;
@@ -1298,7 +1298,7 @@
   }
   .modal{
     &__content{
-      padding: 17px 27px;
+      padding: 17px 17px;
       max-height: 450px;
     }
     &__form-title{
@@ -1311,7 +1311,6 @@
     &__form-inf{
       max-height: 240px;
       padding: 0;
-      padding-right: 15px;
     }
     &__form-group {
       margin-bottom: 0px;
