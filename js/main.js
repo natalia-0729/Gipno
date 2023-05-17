@@ -118,3 +118,13 @@ buttonElems.forEach(btn =>{
   btn.addEventListener('click', openModal);
 });
 modalElem.addEventListener('click', closeModal);
+
+
+
+//Автоувеличение textarea
+const textarea = document.querySelector("textarea");
+textarea.addEventListener("keyup", e =>{
+  textarea.style.height = "5px";
+  let scHeight = e.target.scrollHeight;
+  textarea.style.height = `${scHeight}px`;
+});
